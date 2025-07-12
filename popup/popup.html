@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>PDF Shadow Mode</title>
+        <link rel="stylesheet" href="popup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="popup-container">
+            <header class="popup-header">
+                <div class="logo">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <h1 class="popup-title">PDF Shadow Mode</h1>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="masterToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </header>
+            <main class="popup-main">
+                <div class="form-group">
+                    <label for="themeDropdown" class="form-label">Tema Visual</label>
+                    <div class="select-wrapper">
+                        <select id="themeDropdown"></select>
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <label for="autoModeToggle" class="form-label">Mode Otomatis</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="autoModeToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </main>
+            <footer class="popup-footer">
+                <a href="https://github.com/RozhakXD/PDF-Shadow-Mode" target="_blank" class="github-link">
+                    <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>Beri Bintang di GitHub</span>
+                </a>
+            </footer>
+        </div>
+        <script src="../scripts/themes.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
